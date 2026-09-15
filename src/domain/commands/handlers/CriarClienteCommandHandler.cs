@@ -1,9 +1,9 @@
-using BaseDotNet.Domain.Entities;
-using BaseDotNet.Domain.Interfaces;
-using BaseDotNet.Domain.Notifications;
+using BaseDotnet.Domain.Entities;
+using BaseDotnet.Domain.Interfaces;
+using BaseDotnet.Domain.Notifications;
 using MediatR;
 
-namespace BaseDotNet.Domain.Commands.Handlers
+namespace BaseDotnet.Domain.Commands.Handlers
 {
     public class CriarClienteCommandHandler(
         IClienteRepository clienteRepository,

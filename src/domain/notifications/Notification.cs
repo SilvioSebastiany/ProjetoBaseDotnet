@@ -1,4 +1,4 @@
-namespace BaseDotNet.Domain.Notifications
+namespace BaseDotnet.Domain.Notifications
 {
     public class Notification
     {

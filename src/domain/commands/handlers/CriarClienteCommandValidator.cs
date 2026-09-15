@@ -1,6 +1,6 @@
 using FluentValidation;
 
-namespace BaseDotNet.Domain.Commands.Handlers
+namespace BaseDotnet.Domain.Commands.Handlers
 {
     public class CriarClienteCommandValidator : AbstractValidator<CriarClienteCommand>
     {

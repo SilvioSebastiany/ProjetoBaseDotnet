@@ -1,16 +1,16 @@
 using System.Reflection;
-using BaseDotNet.Domain.Commands.Behaviors;
-using BaseDotNet.Domain.Interfaces;
-using BaseDotNet.Domain.Notifications;
-using BaseDotNet.Infra.Data.DbContext;
-using BaseDotNet.Infra.Data.Repositories;
+using BaseDotnet.Domain.Commands.Behaviors;
+using BaseDotnet.Domain.Interfaces;
+using BaseDotnet.Domain.Notifications;
+using BaseDotnet.Infra.Data.DbContext;
+using BaseDotnet.Infra.Data.Repositories;
 using FluentValidation;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace BaseDotNet.Infra.CrossCutting.Ioc
+namespace BaseDotnet.Infra.CrossCutting.Ioc
 {
     public static class DependencyInjection
     {
@@ -18,7 +18,7 @@ namespace BaseDotNet.Infra.CrossCutting.Ioc
 
         public static IServiceCollection AddInfraestrutura(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<BaseDotNetContext>(options => options
+            services.AddDbContext<BaseDotnetContext>(options => options
                 .UseNpgsql(configuration.GetConnectionString("DefaultConnection"))
                 .UseSnakeCaseNamingConvention());
 

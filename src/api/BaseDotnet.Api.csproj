@@ -16,8 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\domain\BaseDotNet.Domain.csproj" />
-    <ProjectReference Include="..\infra.crosscutting.ioc\BaseDotNet.Infra.CrossCutting.Ioc.csproj" />
+    <ProjectReference Include="..\domain\BaseDotnet.Domain.csproj" />
+    <ProjectReference Include="..\infra.crosscutting.ioc\BaseDotnet.Infra.CrossCutting.Ioc.csproj" />
   </ItemGroup>
 
 </Project>

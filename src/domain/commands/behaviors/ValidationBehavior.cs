@@ -2,11 +2,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using BaseDotNet.Domain.Notifications;
+using BaseDotnet.Domain.Notifications;
 using FluentValidation;
 using MediatR;
 
-namespace BaseDotNet.Domain.Commands.Behaviors
+namespace BaseDotnet.Domain.Commands.Behaviors
 {
     public class ValidationBehavior<TRequest, TResponse>(
         IEnumerable<IValidator<TRequest>> validators,

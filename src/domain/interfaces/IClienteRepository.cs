@@ -1,6 +1,6 @@
-using BaseDotNet.Domain.Entities;
+using BaseDotnet.Domain.Entities;
 
-namespace BaseDotNet.Domain.Interfaces
+namespace BaseDotnet.Domain.Interfaces
 {
     public interface IClienteRepository
     {

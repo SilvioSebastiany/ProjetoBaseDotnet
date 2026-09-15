@@ -1,6 +1,6 @@
 using MediatR;
 
-namespace BaseDotNet.Domain.Commands.Handlers
+namespace BaseDotnet.Domain.Commands.Handlers
 {
     public class CriarClienteCommand : IRequest<CriarClienteCommandResult>
     {

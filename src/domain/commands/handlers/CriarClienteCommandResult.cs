@@ -1,4 +1,4 @@
-namespace BaseDotNet.Domain.Commands.Handlers
+namespace BaseDotnet.Domain.Commands.Handlers
 {
     public class CriarClienteCommandResult
     {

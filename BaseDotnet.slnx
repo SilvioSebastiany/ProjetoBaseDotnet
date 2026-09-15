@@ -1,0 +1,21 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/api/">
+    <Project Path="src/api/BaseDotnet.Api.csproj" />
+  </Folder>
+  <Folder Name="/src/domain/">
+    <Project Path="src/domain/BaseDotnet.Domain.csproj" />
+  </Folder>
+  <Folder Name="/src/infra.crosscutting.ioc/">
+    <Project Path="src/infra.crosscutting.ioc/BaseDotnet.Infra.CrossCutting.Ioc.csproj" />
+  </Folder>
+  <Folder Name="/src/infra.crosscutting/">
+    <Project Path="src/infra.crosscutting/BaseDotnet.Infra.CrossCutting.csproj" />
+  </Folder>
+  <Folder Name="/src/infra.data/">
+    <Project Path="src/infra.data/BaseDotnet.Infra.Data.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/BaseDotnet.Domain.Tests/BaseDotnet.Domain.Tests.csproj" />
+  </Folder>
+</Solution>

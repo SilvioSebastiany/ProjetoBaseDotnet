@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace BaseDotNet.Infra.Data.migrations
+namespace BaseDotnet.Infra.Data.migrations
 {
     /// <inheritdoc />
     public partial class InicialCriarClientes : Migration

@@ -1,4 +1,4 @@
-namespace BaseDotNet.Domain.Entities
+namespace BaseDotnet.Domain.Entities
 {
     public class Cliente
     {

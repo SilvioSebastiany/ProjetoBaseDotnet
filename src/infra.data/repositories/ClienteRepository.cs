@@ -1,10 +1,10 @@
-using BaseDotNet.Domain.Entities;
-using BaseDotNet.Domain.Interfaces;
-using BaseDotNet.Infra.Data.DbContext;
+using BaseDotnet.Domain.Entities;
+using BaseDotnet.Domain.Interfaces;
+using BaseDotnet.Infra.Data.DbContext;
 
-namespace BaseDotNet.Infra.Data.Repositories
+namespace BaseDotnet.Infra.Data.Repositories
 {
-    public class ClienteRepository(BaseDotNetContext context) : IClienteRepository
+    public class ClienteRepository(BaseDotnetContext context) : IClienteRepository
     {
         public async Task AdicionarAsync(Cliente cliente, CancellationToken cancellationToken)
         {

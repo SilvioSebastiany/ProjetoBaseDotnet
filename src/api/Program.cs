@@ -1,4 +1,4 @@
-using BaseDotNet.Infra.CrossCutting.Ioc;
+using BaseDotnet.Infra.CrossCutting.Ioc;
 using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);

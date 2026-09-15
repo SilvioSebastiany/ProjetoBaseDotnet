@@ -1,9 +1,9 @@
-using BaseDotNet.Domain.Commands.Handlers;
-using BaseDotNet.Domain.Notifications;
+using BaseDotnet.Domain.Commands.Handlers;
+using BaseDotnet.Domain.Notifications;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BaseDotNet.Api.Controllers
+namespace BaseDotnet.Api.Controllers
 {
     [ApiController]
     [Route("clientes")]

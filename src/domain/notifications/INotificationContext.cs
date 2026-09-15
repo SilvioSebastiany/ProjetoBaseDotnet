@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace BaseDotNet.Domain.Notifications
+namespace BaseDotnet.Domain.Notifications
 {
     public interface INotificationContext
     {

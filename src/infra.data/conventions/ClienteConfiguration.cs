@@ -1,8 +1,8 @@
-using BaseDotNet.Domain.Entities;
+using BaseDotnet.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace BaseDotNet.Infra.Data.Conventions
+namespace BaseDotnet.Infra.Data.Conventions
 {
     public class ClienteConfiguration : IEntityTypeConfiguration<Cliente>
     {

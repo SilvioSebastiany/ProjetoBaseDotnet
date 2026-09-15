@@ -1,3 +1,3 @@
-@BaseDotNet.Api_HostAddress = http://localhost:5198
+@BaseDotnet.Api_HostAddress = http://localhost:5198
 
 ### Esqueleto vazio — adicione requisições de exemplo aqui quando a primeira feature real for portada.

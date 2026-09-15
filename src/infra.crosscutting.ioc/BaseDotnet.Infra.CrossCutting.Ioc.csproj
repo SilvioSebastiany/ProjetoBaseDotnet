@@ -1,9 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\domain\BaseDotNet.Domain.csproj" />
-    <ProjectReference Include="..\infra.data\BaseDotNet.Infra.Data.csproj" />
-    <ProjectReference Include="..\infra.crosscutting\BaseDotNet.Infra.CrossCutting.csproj" />
+<ProjectReference Include="..\infra.data\BaseDotnet.Infra.Data.csproj" />
+    <ProjectReference Include="..\infra.crosscutting\BaseDotnet.Infra.CrossCutting.csproj" />
   </ItemGroup>
 
   <ItemGroup>

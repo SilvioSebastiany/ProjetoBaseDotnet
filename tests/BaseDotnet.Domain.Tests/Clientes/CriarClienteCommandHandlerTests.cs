@@ -1,13 +1,13 @@
 using AutoFixture;
 using AutoFixture.AutoMoq;
-using BaseDotNet.Domain.Commands.Handlers;
-using BaseDotNet.Domain.Interfaces;
-using BaseDotNet.Domain.Notifications;
+using BaseDotnet.Domain.Commands.Handlers;
+using BaseDotnet.Domain.Interfaces;
+using BaseDotnet.Domain.Notifications;
 using Moq;
 using Shouldly;
 using Xunit;
 
-namespace BaseDotNet.Domain.Tests.Clientes
+namespace BaseDotnet.Domain.Tests.Clientes
 {
     public class CriarClienteCommandHandlerTests
     {
