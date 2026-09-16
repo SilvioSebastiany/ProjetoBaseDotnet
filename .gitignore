@@ -7,3 +7,6 @@
 .idea/
 .DS_Store
 Thumbs.db
+.claude
+docs/ideas
+skills-lock.json
