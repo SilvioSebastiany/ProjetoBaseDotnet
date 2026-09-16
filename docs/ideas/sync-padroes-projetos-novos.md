@@ -28,6 +28,7 @@ Isso também resolve o problema simetricamente na origem: o próprio `~/.claude/
 - Seção fixa no `CLAUDE.md` do projeto novo, delimitada por marcadores (`<!-- INÍCIO/FIM SEÇÃO SINCRONIZADA: dotnet-init-solucao -->`) para permitir re-sync sem duplicar — texto exato em `assets/claude-md-secao-base.md`.
 - Regra de sync documentada no passo a passo: sobrescreve sempre, sem perguntar; se `ProjetoBaseDotnet` não existir na máquina, pula e avisa em vez de falhar.
 - A própria skill parou de hardcodar a arquitetura em texto: agora referencia `ProjetoBaseDotnet` como fonte única (seção "Fonte única da arquitetura").
+- `docs/base/` e `examples/base/` entram no `.gitignore` gerado para o projeto novo (`assets/gitignore-template.txt`) — é conteúdo sincronizável, não autoral daquele projeto; não faz sentido versionar o histórico de `ProjetoBaseDotnet` dentro de cada clone.
 
 **Fora (não implementado, decisão explícita):**
 - Merge inteligente ou detecção de customização local.
