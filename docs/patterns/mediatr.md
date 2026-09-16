@@ -18,4 +18,4 @@ Não use para leitura (isso reintroduz a simetria que o CQRS assimétrico deste 
 
 ## Exemplo no código
 
-TODO — preencher quando a feature de exemplo real for portada para `examples/`.
+[`ClientesController.CriarAsync`](../../examples/clientes/11-Controller-ClientesController.cs) chama `mediator.Send(command, cancellationToken)`, que o MediatR roteia para [`CriarClienteCommandHandler`](../../examples/clientes/06-Handler-CriarClienteCommandHandler.cs). A ação `ListarAsync`, no mesmo Controller, não usa `IMediator` — vai direto ao repositório.

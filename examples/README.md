@@ -1,9 +1,18 @@
 # Examples
 
-Esta pasta está vazia de propósito.
+## clientes/
 
-Ela vai receber a primeira feature real e aprovada implementada neste projeto, portada para cá como exemplo canônico de implementação — Command, Query, Handler, Repository, Configuration do EF Core e testes, todos seguindo os padrões documentados em `docs/patterns/`.
+Primeira feature real portada para cá como exemplo canônico de implementação: `Cliente`, cobrindo os dois lados do CQRS assimétrico.
 
-Não é criada nenhuma feature fictícia (tipo "Produto") só para preencher este espaço — o exemplo aqui precisa ser código real, validado em produção, para que sirva de referência confiável ao copiar o padrão para um novo projeto.
+- **Escrita (Command):** `CriarCliente` — Command, Validator, Result, Handler.
+- **Leitura (Query):** `ListarClientes` — ação de leitura no mesmo Controller, sem Mediator, sem Handler.
+- **Persistência:** EF Core Configuration e Repository.
+- **API:** Controller único (`ClientesController`) com as duas ações, Response e Mapper.
+- **Testes:** unitário do Handler (xUnit + Moq + AutoFixture + Shouldly) e E2E dos dois endpoints (`WebApplicationFactory`).
+- **Composition root:** trecho do `dependencyinjection.cs` com o registro de `IClienteRepository`.
 
-Quando essa feature for portada, os "TODO — preencher quando a feature de exemplo real for portada para `examples/`" em cada `docs/patterns/*.md` são substituídos pelo trecho de código correspondente, com link para o arquivo aqui em `examples/`.
+Os arquivos em `examples/clientes/` são cópias de leitura do código real — cada um tem um comentário no topo apontando o arquivo fonte em `src/` ou `tests/`. Não edite os arquivos aqui: edite o original e re-copie.
+
+Os "TODO — preencher quando a feature de exemplo real for portada para `examples/`" em cada `docs/patterns/*.md` foram substituídos pelo trecho de código correspondente, com link para os arquivos aqui.
+
+Nenhuma feature fictícia (tipo "Produto") foi criada só para preencher este espaço — `clientes/` é código real, exercitado pelos testes da solução.

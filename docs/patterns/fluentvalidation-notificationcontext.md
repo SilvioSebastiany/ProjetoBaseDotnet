@@ -20,4 +20,4 @@ Não use exceções para erro de negócio esperado — reserve `throw` para falh
 
 ## Exemplo no código
 
-TODO — preencher quando a feature de exemplo real for portada para `examples/`.
+[`CriarClienteCommandValidator`](../../examples/clientes/04-Validator-CriarClienteCommandValidator.cs) valida forma (nome obrigatório, e-mail em formato válido) antes do Handler rodar; [`CriarClienteCommandHandler`](../../examples/clientes/06-Handler-CriarClienteCommandHandler.cs) checa `notificationContext.HasNotifications` no início e retorna sem persistir se houver erro.

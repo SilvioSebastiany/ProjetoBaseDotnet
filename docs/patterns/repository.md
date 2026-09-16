@@ -16,4 +16,4 @@ Não crie um repositório genérico (`IRepository<T>`) como abstração antecipa
 
 ## Exemplo no código
 
-TODO — preencher quando a feature de exemplo real for portada para `examples/`.
+[`IClienteRepository`](../../examples/clientes/02-Interface-IClienteRepository.cs) (interface em `domain/interfaces/`) e [`ClienteRepository`](../../examples/clientes/08-Repository-ClienteRepository.cs) (implementação em `infra.data/repositories/`) — dois métodos só, `AdicionarAsync` e `ListarAsync`, sem CRUD genérico.

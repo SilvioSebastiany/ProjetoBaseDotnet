@@ -16,4 +16,4 @@ Se o arquivo crescer demais, divida em métodos de extensão dentro do próprio 
 
 ## Exemplo no código
 
-TODO — preencher quando a feature de exemplo real for portada para `examples/`.
+[`dependencyinjection.cs`](../../examples/clientes/15-Ioc-DependencyInjection.cs) — `IClienteRepository` (e `INotificationContext`) registrados em `AddInfraestrutura`, ao lado do DbContext, MediatR e FluentValidation.

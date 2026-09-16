@@ -16,4 +16,4 @@ Não coloque lógica de negócio na `Configuration` — ela só descreve mapeame
 
 ## Exemplo no código
 
-TODO — preencher quando a feature de exemplo real for portada para `examples/`.
+[`ClienteConfiguration`](../../examples/clientes/07-EfConfiguration-ClienteConfiguration.cs) — mapeamento de `Cliente` para a tabela `clientes`, com nomes de coluna snake_case e `HasMaxLength` explícito, sem nenhuma Data Annotation na entidade.

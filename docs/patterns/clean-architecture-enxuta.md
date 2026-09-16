@@ -16,4 +16,4 @@ Não force esta estrutura se o projeto tiver múltiplos bounded contexts complex
 
 ## Exemplo no código
 
-TODO — preencher quando a feature de exemplo real for portada para `examples/`.
+A feature `Cliente` em [`examples/clientes/`](../../examples/clientes/) atravessa as 3 camadas sem uma classe de orquestração `Application`: o Command (`03-Command-CriarClienteCommand.cs`) vai direto ao Handler (`06-Handler-CriarClienteCommandHandler.cs`), que já é o caso de uso.

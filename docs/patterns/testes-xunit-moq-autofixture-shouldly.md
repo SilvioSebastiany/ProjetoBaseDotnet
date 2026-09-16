@@ -22,4 +22,4 @@ Não use AutoFixture para gerar valores que o teste precisa controlar explicitam
 
 ## Exemplo no código
 
-TODO — preencher quando a feature de exemplo real for portada para `examples/`.
+[`CriarClienteCommandHandlerTests`](../../examples/clientes/12-TesteUnitario-CriarClienteCommandHandlerTests.cs) — Handler testado isolado, com `IClienteRepository` e `INotificationContext` mockados via AutoFixture+AutoMoq, cobrindo o caminho feliz e o caso de notificação de erro.

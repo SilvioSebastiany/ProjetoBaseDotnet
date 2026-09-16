@@ -28,4 +28,4 @@ Command e Query do mesmo recurso ficam no mesmo Controller, uma ação HTTP por 
 
 ## Exemplo no código
 
-`GET /clientes` em [`ClientesController`](../../src/api/controllers/ClientesController.cs) — ação de leitura sem Mediator, repositório injetado direto, ao lado de `POST /clientes` (Command) no mesmo Controller.
+`GET /clientes` em [`ClientesController`](../../examples/clientes/11-Controller-ClientesController.cs) — ação de leitura sem Mediator, repositório injetado direto, ao lado de `POST /clientes` (Command) no mesmo Controller.
