@@ -1,6 +1,6 @@
 # Git
 
-Convenção de commits para este projeto e para os projetos criados a partir dele, baseada no padrão já usado no FluxoDev.
+Convenção de commits para este projeto e para os projetos criados a partir dele.
 
 ## Formato
 
@@ -12,7 +12,7 @@ Segue [Conventional Commits](https://www.conventionalcommits.org/), em portuguê
 [corpo opcional — só se precisar explicar o "porquê", não o "o quê"]
 ```
 
-Em projetos que trabalham com tarefas com identificador (como o FluxoDev, que usa `T-XX`), o ID da tarefa entra como escopo obrigatório: `<tipo>(<T-XX>): <descrição>`.
+Em projetos que trabalham com tarefas com identificador (por exemplo, `T-XX`), o ID da tarefa entra como escopo obrigatório: `<tipo>(<T-XX>): <descrição>`.
 
 ## Tipos permitidos
 

@@ -16,4 +16,4 @@ Não crie um repositório genérico (`IRepository<T>`) como abstração antecipa
 
 ## Exemplo no código
 
-TODO — preencher quando a feature de exemplo real for portada do FluxoDev.
+TODO — preencher quando a feature de exemplo real for portada para `examples/`.

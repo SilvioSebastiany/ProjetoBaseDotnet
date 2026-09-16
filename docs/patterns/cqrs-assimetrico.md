@@ -24,4 +24,4 @@ Não crie um Command para uma leitura só para manter "consistência de padrão"
 
 ## Exemplo no código
 
-TODO — preencher quando a feature de exemplo real for portada do FluxoDev.
+TODO — preencher quando a feature de exemplo real for portada para `examples/`.

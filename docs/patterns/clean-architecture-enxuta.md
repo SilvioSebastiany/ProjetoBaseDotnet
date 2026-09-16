@@ -10,10 +10,10 @@ A camada `Application`, nos modelos clássicos, normalmente existe para orquestr
 
 ## Quando usar / quando não usar
 
-Use esta estrutura para qualquer projeto novo que siga o mesmo perfil do FluxoDev: uma API .NET com regras de negócio de porte pequeno a médio, onde CQRS assimétrico (ver `cqrs-assimetrico.md`) já resolve a separação entre leitura e escrita.
+Use esta estrutura para qualquer projeto novo com o mesmo perfil deste projeto-base: uma API .NET com regras de negócio de porte pequeno a médio, onde CQRS assimétrico (ver `cqrs-assimetrico.md`) já resolve a separação entre leitura e escrita.
 
 Não force esta estrutura se o projeto tiver múltiplos bounded contexts complexos, integrações externas pesadas (filas, jobs, workers) ou exigir camadas adicionais como `infra.externals` — nesses casos, adapte a estrutura e documente a adaptação (como já é feito aqui: este projeto-base intencionalmente não tem `infra.externals`, `jobs` ou `robo` porque nenhum projeto até agora precisou).
 
 ## Exemplo no código
 
-TODO — preencher quando a feature de exemplo real for portada do FluxoDev.
+TODO — preencher quando a feature de exemplo real for portada para `examples/`.

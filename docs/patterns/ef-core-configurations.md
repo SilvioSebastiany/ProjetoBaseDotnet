@@ -16,4 +16,4 @@ Não coloque lógica de negócio na `Configuration` — ela só descreve mapeame
 
 ## Exemplo no código
 
-TODO — preencher quando a feature de exemplo real for portada do FluxoDev.
+TODO — preencher quando a feature de exemplo real for portada para `examples/`.

@@ -16,4 +16,4 @@ Se o arquivo crescer demais, divida em métodos de extensão dentro do próprio 
 
 ## Exemplo no código
 
-TODO — preencher quando a feature de exemplo real for portada do FluxoDev.
+TODO — preencher quando a feature de exemplo real for portada para `examples/`.

@@ -18,4 +18,4 @@ Não use para leitura (isso reintroduz a simetria que o CQRS assimétrico deste 
 
 ## Exemplo no código
 
-TODO — preencher quando a feature de exemplo real for portada do FluxoDev.
+TODO — preencher quando a feature de exemplo real for portada para `examples/`.

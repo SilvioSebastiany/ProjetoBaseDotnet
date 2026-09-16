@@ -22,4 +22,4 @@ Não use AutoFixture para gerar valores que o teste precisa controlar explicitam
 
 ## Exemplo no código
 
-TODO — preencher quando a feature de exemplo real for portada do FluxoDev.
+TODO — preencher quando a feature de exemplo real for portada para `examples/`.

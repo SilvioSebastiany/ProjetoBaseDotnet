@@ -1,6 +1,6 @@
 # Arquitetura
 
-Este projeto não segue um modelo genérico de Clean Architecture com camada `Application` separada. Segue a arquitetura já validada em produção no FluxoDev — enxuta, com 3 camadas conceituais divididas em 5 projetos `.csproj`.
+Este projeto não segue um modelo genérico de Clean Architecture com camada `Application` separada. Segue uma arquitetura enxuta própria, com 3 camadas conceituais divididas em 5 projetos `.csproj`.
 
 ## As camadas
 
