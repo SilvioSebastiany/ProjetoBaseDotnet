@@ -40,7 +40,8 @@ FluentValidation nos Commands, acumulando erros via `NotificationContext` (nunca
 
 ## Testes
 
-xUnit + Moq + AutoFixture + Shouldly. Ver `docs/patterns/testes-xunit-moq-autofixture-shouldly.md`.
+- Unitário (Handler isolado, com mocks): xUnit + Moq + AutoFixture + Shouldly. Ver `docs/patterns/testes-xunit-moq-autofixture-shouldly.md`.
+- E2E (endpoint real via HTTP): `WebApplicationFactory` apontando para o mesmo Postgres configurado, sem mocks. Ver `docs/patterns/testes-e2e-webapplicationfactory.md`.
 
 ## Git
 

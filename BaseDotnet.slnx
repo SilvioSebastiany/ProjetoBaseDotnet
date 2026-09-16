@@ -16,6 +16,7 @@
     <Project Path="src/infra.data/BaseDotnet.Infra.Data.csproj" />
   </Folder>
   <Folder Name="/tests/">
+    <Project Path="tests/BaseDotnet.Api.Tests/BaseDotnet.Api.Tests.csproj" />
     <Project Path="tests/BaseDotnet.Domain.Tests/BaseDotnet.Domain.Tests.csproj" />
   </Folder>
 </Solution>

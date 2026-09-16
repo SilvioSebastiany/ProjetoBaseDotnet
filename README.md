@@ -46,6 +46,7 @@ docs/
     ef-core-configurations.md
     dependency-injection.md
     testes-xunit-moq-autofixture-shouldly.md
+    testes-e2e-webapplicationfactory.md
   git.md
 src/
   api/                       # Controllers (Commands) e QueryControllers (Queries), mappers, responses
@@ -54,6 +55,8 @@ src/
   infra.crosscutting/        # Enums, constantes, extensions, settings
   infra.crosscutting.ioc/    # Composition root (dependencyinjection.cs)
 tests/
+  BaseDotnet.Domain.Tests/    # Unitario: xUnit + Moq + AutoFixture + Shouldly
+  BaseDotnet.Api.Tests/        # E2E: WebApplicationFactory + HttpClient real
 examples/                    # Vazio até a primeira feature real ser aprovada e portada
 .editorconfig
 Directory.Build.props
