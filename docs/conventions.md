@@ -32,7 +32,7 @@ Regras práticas de nomenclatura e código, válidas em todo o projeto. Onde uma
 
 ## Commands vs Queries
 
-Ver `docs/patterns/cqrs-assimetrico.md` para a decisão completa. Resumo: escrita ou regra de negócio → Command via MediatR; leitura pura → QueryController direto ao repositório, sem Handler.
+Ver `docs/patterns/cqrs-assimetrico.md` para a decisão completa. Resumo: escrita ou regra de negócio → Command via MediatR; leitura pura → ação de leitura no Controller do recurso, direto ao repositório, sem Handler.
 
 ## Validação
 

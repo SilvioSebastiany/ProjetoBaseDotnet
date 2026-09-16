@@ -16,7 +16,7 @@ Handlers e Repositories têm dependências (outros repositórios, `NotificationC
 
 Todo `CommandHandler` tem teste unitário cobrindo o caminho feliz e os principais casos de notificação de erro (ex: "projeto não existe" → `NotificationContext` recebe a notificação e o Handler não persiste nada).
 
-`QueryController`s simples (sem regra de negócio) podem ter cobertura mais leve — o valor do teste ali é menor, já que não há lógica a validar, só passagem de dado.
+Ações de leitura simples no Controller (sem regra de negócio) podem ter cobertura mais leve — o valor do teste ali é menor, já que não há lógica a validar, só passagem de dado.
 
 Não use AutoFixture para gerar valores que o teste precisa controlar explicitamente (ex: um id específico usado na asserção) — nesses casos, defina o valor manualmente e use AutoFixture só para o resto do objeto.
 

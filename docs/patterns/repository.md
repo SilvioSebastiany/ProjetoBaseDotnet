@@ -2,7 +2,7 @@
 
 ## O que é
 
-O padrão Repository isola o acesso a dados atrás de uma interface (`IProdutoRepository`, por exemplo) declarada em `domain/interfaces/` e implementada em `infra.data/repositories/`. Tanto o `CommandHandler` (escrita) quanto o `QueryController` (leitura) dependem só da interface, nunca da implementação concreta nem do EF Core diretamente.
+O padrão Repository isola o acesso a dados atrás de uma interface (`IProdutoRepository`, por exemplo) declarada em `domain/interfaces/` e implementada em `infra.data/repositories/`. Tanto o `CommandHandler` (escrita) quanto a ação de leitura no Controller (leitura) dependem só da interface, nunca da implementação concreta nem do EF Core diretamente.
 
 ## Por que usamos
 

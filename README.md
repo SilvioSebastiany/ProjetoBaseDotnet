@@ -9,7 +9,7 @@ A ideia é simples: em vez de recomeçar cada projeto do zero, este repositório
 ## Princípios deste projeto
 
 - **Simplicidade antes de abstração** — resolve o problema de hoje; não cria camada, interface ou abstração para um cenário hipotético futuro.
-- **Cada responsabilidade tem um lugar definido** — Command decide, QueryController busca, Handler executa, Repository persiste. Nada mora em dois lugares.
+- **Cada responsabilidade tem um lugar definido** — Command decide, Controller busca (na leitura) ou dispara o Handler (na escrita), Repository persiste. Nada mora em dois lugares.
 - **Código testável** — se é difícil de testar, o desenho está errado, não o teste.
 - **Não criar abstrações sem necessidade** — uma interface só existe quando há (ou vai haver de fato) mais de uma implementação, ou quando é necessária para teste/DI.
 - **Toda nova feature segue o fluxo existente** — Command ou Query, na estrutura de pastas já definida. Desvio do padrão é exceção documentada, não regra nova por feature.
@@ -49,7 +49,7 @@ docs/
     testes-e2e-webapplicationfactory.md
   git.md
 src/
-  api/                       # Controllers (Commands) e QueryControllers (Queries), mappers, responses
+  api/                       # Controllers (Commands e Queries juntos por recurso), mappers, responses
   domain/                    # Entidades, commands/handlers, interfaces, notifications — sem dependências externas
   infra.data/                # DbContext, conventions (Fluent API), migrations, repositories
   infra.crosscutting/        # Enums, constantes, extensions, settings

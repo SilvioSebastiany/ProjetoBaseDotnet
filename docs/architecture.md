@@ -17,8 +17,7 @@ Conceitualmente são 3 camadas — **api**, **domain**, **infra** — mas `infra
 
 ### `api`
 Camada de entrada. Contém:
-- `controllers/` — Controllers de escrita, que disparam Commands via `IMediator`.
-- `queries/` — QueryControllers, que acessam o repositório diretamente (sem Mediator, sem Handler).
+- `controllers/` — um Controller por recurso, com as ações de escrita (via `IMediator`) e de leitura (via repositório direto, sem Mediator, sem Handler) juntas na mesma classe.
 - `mappers/` — conversão Entity ↔ DTO (Response).
 - `responses/` — os DTOs de saída.
 
@@ -52,14 +51,14 @@ infra.crosscutting.ioc (referencia tudo, é o composition root)
 
 - `domain` não depende de nada.
 - `infra.data` implementa as interfaces que `domain` declara.
-- `api` conhece `domain` — via `IMediator` para escrita, e via injeção direta de repositório para leitura (`QueryController`).
+- `api` conhece `domain` — via `IMediator` para escrita, e via injeção direta de repositório para leitura, ambos no mesmo Controller.
 - `infra.crosscutting.ioc` é o único projeto que conhece todos os outros; é onde a composição acontece.
 
 ## Por que não tem camada `Application`
 
 Nos modelos genéricos de Clean Architecture, a camada `Application` concentra os casos de uso. Aqui, esse papel é dividido:
 - Escrita (Command) → o caso de uso é o próprio `CommandHandler`, dentro de `domain/commands/handlers`.
-- Leitura (Query) → não há caso de uso separado; o `QueryController` acessa o repositório direto.
+- Leitura (Query) → não há caso de uso separado; o próprio Controller acessa o repositório direto.
 
 Isso elimina uma camada inteira de classes de "orquestração" que, na prática, só repassavam a chamada — ver `docs/patterns/cqrs-assimetrico.md` para o raciocínio completo.
 

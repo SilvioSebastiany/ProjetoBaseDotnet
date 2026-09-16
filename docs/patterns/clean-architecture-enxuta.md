@@ -6,7 +6,7 @@ Uma versão simplificada da Clean Architecture: em vez das 4 camadas clássicas 
 
 ## Por que usamos
 
-A camada `Application`, nos modelos clássicos, normalmente existe para orquestrar casos de uso — mas na prática, com CQRS, o "caso de uso" já É o Handler do Command (ou o próprio QueryController, para leitura). Manter uma camada `Application` à parte significava, na prática, uma classe a mais que só repassava a chamada para o domínio, sem agregar nada. Removendo essa camada, o código fica mais direto de navegar: a regra de negócio de uma feature está inteira dentro de `domain/commands/handlers/<feature>/<acao>/`, sem pular entre projetos para entender o fluxo completo.
+A camada `Application`, nos modelos clássicos, normalmente existe para orquestrar casos de uso — mas na prática, com CQRS, o "caso de uso" já É o Handler do Command (ou a própria ação de leitura no Controller, para leitura). Manter uma camada `Application` à parte significava, na prática, uma classe a mais que só repassava a chamada para o domínio, sem agregar nada. Removendo essa camada, o código fica mais direto de navegar: a regra de negócio de uma feature está inteira dentro de `domain/commands/handlers/<feature>/<acao>/`, sem pular entre projetos para entender o fluxo completo.
 
 ## Quando usar / quando não usar
 
