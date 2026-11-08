@@ -13,6 +13,4 @@ Primeira feature real portada para cá como exemplo canônico de implementação
 
 Os arquivos em `examples/clientes/` são cópias de leitura do código real — cada um tem um comentário no topo apontando o arquivo fonte em `src/` ou `tests/`. Não edite os arquivos aqui: edite o original e re-copie.
 
-Os "TODO — preencher quando a feature de exemplo real for portada para `examples/`" em cada `docs/patterns/*.md` foram substituídos pelo trecho de código correspondente, com link para os arquivos aqui.
-
 Nenhuma feature fictícia (tipo "Produto") foi criada só para preencher este espaço — `clientes/` é código real, exercitado pelos testes da solução.
