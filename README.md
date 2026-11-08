@@ -34,20 +34,9 @@ A ideia é simples: em vez de recomeçar cada projeto do zero, este repositório
 
 ```
 README.md
-docs/
-  architecture.md
-  conventions.md
-  patterns/
-    clean-architecture-enxuta.md
-    cqrs-assimetrico.md
-    mediatr.md
-    fluentvalidation-notificationcontext.md
-    repository.md
-    ef-core-configurations.md
-    dependency-injection.md
-    testes-xunit-moq-autofixture-shouldly.md
-    testes-e2e-webapplicationfactory.md
-  git.md
+.claude/
+  CLAUDE.md                  # Padrão de código .NET (genérico)
+  rules/                     # Regras detalhadas por tema
 src/
   api/                       # Controllers (Commands e Queries juntos por recurso), mappers, responses
   domain/                    # Entidades, commands/handlers, interfaces, notifications — sem dependências externas
@@ -63,15 +52,14 @@ Directory.Build.props
 Directory.Packages.props
 ```
 
-Veja `docs/architecture.md` para a explicação de cada camada e o fluxo de dependências.
+O padrão de código — camadas, fluxo de dependências, CQRS, banco, testes — está em `.claude/CLAUDE.md` e, por tema, em `.claude/rules/`.
 
 ---
 
 ## Como usar este projeto como base para um novo projeto
 
 1. Clone ou copie este repositório com o nome do novo projeto.
-2. Leia `docs/architecture.md` e `docs/conventions.md` antes de escrever qualquer código — eles explicam o porquê das decisões, não só o quê.
-3. Para cada feature nova, siga o fluxo descrito em `docs/patterns/cqrs-assimetrico.md`: decida primeiro se é Command (escrita, com regra de negócio) ou Query (leitura pura) — isso define todo o resto do caminho.
-4. Use os arquivos em `docs/patterns/` como referência ao implementar cada peça (Handler, Repository, Configuration do EF Core, testes etc.). Cada um tem um "Exemplo no código" que será preenchido assim que a primeira feature real for portada para `examples/`.
-5. Não mexa nos nomes de camada nem invente uma camada `Application` — a divisão em 3 camadas (api / domain / infra) é uma decisão deliberada, documentada em `docs/architecture.md`.
-6. Ao final da primeira feature, revise `docs/conventions.md` — se algo tiver ficado ambíguo, é hora de esclarecer o documento, não de decidir caso a caso a cada feature nova.
+2. Leia `.claude/CLAUDE.md` antes de escrever qualquer código, e a regra do tema em `.claude/rules/` antes de criar ou alterar algo dele.
+3. Use `examples/` como referência de código real ao implementar cada peça (Handler, Repository, Configuration do EF Core, testes etc.).
+4. Não mexa nos nomes de camada nem invente uma camada `Application` — a divisão em 3 camadas (api / domain / infra) é uma decisão deliberada.
+5. Ao final da primeira feature, se algo tiver ficado ambíguo, esclareça no `CLAUDE.md` da raiz do novo projeto — não decida caso a caso a cada feature nova.

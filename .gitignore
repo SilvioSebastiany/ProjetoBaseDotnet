@@ -7,6 +7,8 @@
 .idea/
 .DS_Store
 Thumbs.db
-.claude
+.claude/*
+!.claude/CLAUDE.md
+!.claude/rules/
 docs/ideas
 skills-lock.json
